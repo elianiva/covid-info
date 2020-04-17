@@ -1,0 +1,48 @@
+.navbar {
+  padding: 1rem;
+  background-color: #121212;
+  color: #efefef;
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  &__items {
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__item {
+    color: #555555;
+    position: relative;
+    transition: all ease-out 0.25s;
+    cursor: pointer;
+    margin: 0 1rem;
+
+    &--active,
+    &:hover {
+      color: #efefef;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: -0.25rem;
+        height: 0.125rem;
+        background-color: #efefef;
+      }
+    }
+  }
+}
