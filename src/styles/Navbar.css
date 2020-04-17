@@ -17,7 +17,6 @@
 
   &__items {
     display: flex;
-    /* grid-template-columns: repeat(4, 1fr); */
     justify-content: flex-end;
     align-items: center;
   }
@@ -29,8 +28,7 @@
     cursor: pointer;
     margin: 0 1rem;
 
-    &--active,
-    &:hover {
+    &--active {
       color: #efefef;
 
       &::after {
@@ -43,6 +41,10 @@
         height: 0.125rem;
         background-color: #efefef;
       }
+    }
+
+    &:hover {
+      color: #efefef;
     }
   }
 }
