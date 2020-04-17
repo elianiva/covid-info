@@ -9,7 +9,6 @@
     "autoprefixer": "^9.7.6",
     "cssnano": "^4.1.10",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.0",
     "postcss-nested": "^4.2.1",
     "postcss-simple-vars": "^5.0.2",
     "react": "^16.13.0",
@@ -17,8 +16,8 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "build:css": "postcss src/styles/*.css -o src/index.css",
-    "watch:css": "postcss src/styles/*.css -o src/index.css -w",
+    "build:css": "postcss src/styles/ -d src/build/",
+    "watch:css": "postcss src/styles/ -d src/build/ -w",
     "start": "npm-run-all -p watch:css start:js",
     "build": "npm-run-all -p build:css build:js",
     "start:js": "react-scripts start",
