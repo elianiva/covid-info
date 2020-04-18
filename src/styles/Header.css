@@ -6,7 +6,7 @@
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   padding-top: 2rem;
-  border-bottom: solid #555555 0.125rem;
+  border-bottom: solid #dbdbdb 0.125rem;
 
   &__flag {
     width: 3rem;
@@ -21,6 +21,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     grid-column: span 4;
+    margin-bottom: 0.25rem;
   }
 
   &__text {

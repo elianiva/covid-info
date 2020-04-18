@@ -1,0 +1,1 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");*{margin:0;padding:0;box-sizing:border-box;font-family:Montserrat,Arial,Helvetica,sans-serif}body{min-height:100vh}.cards{padding:2rem 1rem 0;max-width:1080px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));grid-gap:1rem}

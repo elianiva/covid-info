@@ -1,17 +1,18 @@
 import React from "react"
-import "./styles/App.css"
-import Navbar from "./components/Navbar"
-import Header from "./components/Header"
 import { IndonesiaProvider } from "./context/IndonesiaContext"
+import { BrowserRouter, Switch, Route } from "react-router-dom"
+import Indonesia from "./pages/Indonesia"
 
 function App() {
   return (
     <IndonesiaProvider>
-      <div className="App">
-        <Navbar />
-        <Header />
-        <div className="cards"></div>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <Indonesia />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </IndonesiaProvider>
   )
 }

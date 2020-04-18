@@ -22,7 +22,10 @@
   }
 
   &__item {
-    color: #555555;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #696969;
     position: relative;
     transition: all ease-out 0.25s;
     cursor: pointer;

@@ -1,0 +1,16 @@
+.graph {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 0;
+
+  &__title {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    border: none;
+    background-color: #dbdbdb;
+    height: 0.125rem;
+    margin-top: 1rem;
+  }
+}

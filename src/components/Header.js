@@ -1,5 +1,6 @@
 import React, { useEffect, useContext } from "react"
 import { IndonesiaContext } from "../context/IndonesiaContext"
+import moment from "moment"
 import "../build/Header.css"
 
 function Header() {
@@ -31,7 +32,7 @@ function Header() {
             Data persebaran COVID 19 di Indonesia
           </div>
           <div className="header__update">
-            Terakhir diperbarui: 17 April 2020
+            Terakhir diperbarui: {moment(data.updated).format("DD MMMM YYYY")}
           </div>
         </>
       )}
