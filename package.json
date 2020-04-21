@@ -11,14 +11,14 @@
     "cssnano": "^4.1.10",
     "moment": "^2.24.0",
     "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
     "postcss-nested": "^4.2.1",
     "postcss-simple-vars": "^5.0.2",
     "react": "^16.13.0",
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
-    "postcss": "^7.0.27"
+    "react-scripts": "3.4.0"
   },
   "scripts": {
     "build:css": "postcss src/styles/ -d src/build/",
@@ -34,7 +34,11 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
