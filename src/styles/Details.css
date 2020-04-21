@@ -1,0 +1,46 @@
+.detail {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 1rem 0;
+
+  &__title {
+    font-size: 1.5rem;
+  }
+
+  &__canvas {
+    margin-top: 2rem;
+  }
+
+  &__options {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+  }
+
+  &__button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    border: none;
+    background-color: #dbdbdb;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #121212;
+
+    &--active {
+      background-color: #4078f2;
+      color: #ffffff;
+    }
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+
+  hr {
+    border: none;
+    background-color: #dbdbdb;
+    height: 0.125rem;
+    margin-top: 1rem;
+  }
+}

@@ -1,19 +1,30 @@
 import React from "react"
-import { IndonesiaProvider } from "./context/IndonesiaContext"
-import { BrowserRouter, Switch, Route } from "react-router-dom"
-import Indonesia from "./pages/Indonesia"
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
+import Country from "./pages/Country"
+import Global from "./pages/Global"
+import Search from "./pages/Search"
+import { NavProvider } from "./context/NavContext"
 
 function App() {
   return (
-    <IndonesiaProvider>
+    <NavProvider>
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
-            <Indonesia />
+            <Redirect to="/indonesia" />
+          </Route>
+          <Route path="/global">
+            <Global />
+          </Route>
+          <Route path="/cari">
+            <Search />
+          </Route>
+          <Route path="/:country">
+            <Country />
           </Route>
         </Switch>
       </BrowserRouter>
-    </IndonesiaProvider>
+    </NavProvider>
   )
 }
 
