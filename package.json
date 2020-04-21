@@ -17,7 +17,8 @@
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "postcss": "^7.0.27"
   },
   "scripts": {
     "build:css": "postcss src/styles/ -d src/build/",
@@ -33,18 +34,11 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "postcss": "^7.0.27"
   }
 }
