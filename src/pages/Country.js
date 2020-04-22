@@ -6,6 +6,7 @@ import MobileNav from "../components/MobileNav"
 import Cards from "../components/Cards"
 import Graph from "../components/Graph"
 import Detail from "../components/Detail"
+import Footer from "../components/Footer"
 
 import "../build/Cards.css"
 
@@ -20,14 +21,17 @@ function Country() {
 
   return (
     <div className="App">
-      <Navbar url={country} />
-      <MobileNav
-        visibility={visible ? "visible" : "hidden"}
-        opacity={visible ? 1 : 0}
-      />
-      <Cards country={country} />
-      <Graph country={country} />
-      <Detail />
+      <div style={{ flex: 1 }}>
+        <Navbar url={country} />
+        <MobileNav
+          visibility={visible ? "visible" : "hidden"}
+          opacity={visible ? 1 : 0}
+        />
+        <Cards country={country} />
+        <Graph country={country} />
+        <Detail />
+      </div>
+      <Footer />
     </div>
   )
 }

@@ -5,6 +5,7 @@ import MobileNav from "../components/MobileNav"
 import GlobalCards from "../components/GlobalCards"
 import GlobalGraph from "../components/GlobalGraph"
 import GlobalDetail from "../components/GlobalDetail"
+import Footer from "../components/Footer"
 
 import "../build/Indonesia.css"
 
@@ -18,14 +19,17 @@ function Global() {
 
   return (
     <div className="App">
-      <Navbar url="global" />
-      <MobileNav
-        visibility={visible ? "visible" : "hidden"}
-        opacity={visible ? 1 : 0}
-      />
-      <GlobalCards />
-      <GlobalGraph />
-      <GlobalDetail />
+      <div style={{ flex: 1 }}>
+        <Navbar url="global" />
+        <MobileNav
+          visibility={visible ? "visible" : "hidden"}
+          opacity={visible ? 1 : 0}
+        />
+        <GlobalCards />
+        <GlobalGraph />
+        <GlobalDetail />
+      </div>
+      <Footer />
     </div>
   )
 }

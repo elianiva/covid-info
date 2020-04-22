@@ -2,8 +2,9 @@ import React from "react"
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
 import Country from "./pages/Country"
 import Global from "./pages/Global"
-import Search from "./pages/Search"
+import About from "./pages/About"
 import { NavProvider } from "./context/NavContext"
+import "./build/App.css"
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
           <Route path="/global">
             <Global />
           </Route>
-          <Route path="/cari">
-            <Search />
+          <Route path="/app/tentang">
+            <About />
           </Route>
           <Route path="/:country">
             <Country />

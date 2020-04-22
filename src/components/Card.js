@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 import "../build/Card.css"
 
 import up from "../assets/icon-up.svg"

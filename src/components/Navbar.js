@@ -1,18 +1,10 @@
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
 import { Link } from "react-router-dom"
 import "../build/Navbar.css"
 import { NavContext } from "../context/NavContext"
 
-import { ReactComponent as Search } from "../assets/icon-search.svg"
-
 function Navbar({ url }) {
   const { visible, setVisible } = useContext(NavContext)
-
-  const [query, setQuery] = useState("")
-
-  const onChange = ({ target }) => {
-    setQuery(target.value)
-  }
 
   return (
     <nav className="navbar">
@@ -35,22 +27,14 @@ function Navbar({ url }) {
           >
             Global
           </Link>
-          <Link to="tentang" className="navbar__item">
+          <Link
+            to="/app/tentang"
+            className={`navbar__item ${
+              url === "tentang" && "navbar__item--active"
+            }`}
+          >
             Tentang
           </Link>
-          <div className="navbar__item navbar__searchForm">
-            <input
-              type="text"
-              placeholder="Masukkan nama negara..."
-              value={query}
-              onChange={onChange}
-            />
-            <div className="navbar__search">
-              <Link to={`/${query.toLowerCase()}`}>
-                <Search className="navbar__icon" />
-              </Link>
-            </div>
-          </div>
         </div>
         <button className="navbar__button">
           <input
