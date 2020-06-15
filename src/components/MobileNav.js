@@ -12,7 +12,7 @@ function MobileNav({ visibility, opacity }) {
   }
 
   return (
-    <div className="mobileNav" style={{ visibility, opacity }}>
+    <div className="mobileNav" style={{ visibility }}>
       <div className="mobileNav__overlay"></div>
       <div className="mobileNav__container">
         <div className="mobileNav__items">
@@ -22,7 +22,7 @@ function MobileNav({ visibility, opacity }) {
           <Link to="/global" className="mobileNav__item">
             Global
           </Link>
-          <Link to="/tentang" className="mobileNav__item">
+          <Link to="/app/tentang" className="mobileNav__item">
             Tentang
           </Link>
           <div className="mobileNav__item">

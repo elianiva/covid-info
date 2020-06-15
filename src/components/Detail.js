@@ -17,13 +17,12 @@ function Detail() {
   })
 
   // fetch data from the API
-  let url = "https://api.kawalcorona.com/indonesia/provinsi/"
+  let url = "https://corona.coollabs.work/indonesia/provinsi"
   useEffect(() => {
     fetch(url)
       .then(res => res.json())
       .then(res => {
         setData(res)
-        // res.map(uwu => console.log(uwu.attributes.Kasus_Posi))
       })
       .catch(err => console.log(err))
     // eslint-disable-next-line
@@ -32,11 +31,11 @@ function Detail() {
   // set chartData
   useEffect(() => {
     setChartData({
-      province: data.map(prov => prov.attributes.Provinsi),
-      cases: data.map(prov => prov.attributes.Kasus_Posi),
-      deaths: data.map(prov => prov.attributes.Kasus_Meni),
-      recovered: data.map(prov => prov.attributes.Kasus_Semb),
-      selected: data.map(prov => prov.attributes.Kasus_Posi)
+      province: data.map(prov => prov.Provinsi),
+      cases: data.map(kasus => kasus.Kasus_Posi),
+      deaths: data.map(death => death.Kasus_Meni),
+      recovered: data.map(recovered => recovered.Kasus_Semb),
+      selected: data.map(selected => selected.Kasus_Posi)
     })
   }, [data])
 

@@ -6,8 +6,8 @@ function Footer() {
     <footer className="footer">
       <span className="footer__text">
         Made by{" "}
-        <a href="https://github.com/irrellia/" className="footer__link">
-          Irrelia
+        <a href="https://github.com/elianiva/" className="footer__link">
+          Elianiva
         </a>{" "}
         with <span className="footer__heart">&hearts;</span>
       </span>

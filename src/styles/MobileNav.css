@@ -4,7 +4,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  transition: all ease-out 0.25s;
 
   &__overlay {
     position: fixed;
@@ -46,5 +45,16 @@
     font-size: 1.5rem;
     padding: 1rem 0;
     font-weight: 600;
+  }
+
+  &__input {
+    border: solid #efefef 0.125rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+  }
+
+  &__search {
+    border: none;
+    background: none;
   }
 }
