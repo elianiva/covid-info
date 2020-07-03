@@ -50,13 +50,13 @@ function About() {
                 Coollabs Covid API merupakan sebuah alternatif dari KawalCorona
                 yg dapat menyediakan data tentang COVID 19 di Indonesia. Daftar
                 endpointnya ada di
-                <a href="https://corona.lmao.ninja/docs">disini</a>
+                <a href="https://corona.coollabs.work/">disini</a>
               </p>
               <li
                 style={{
                   textDecoration: "line-through",
                   fontStyle: "italic",
-                  color: "#b0b0b0"
+                  color: "#b0b0b0",
                 }}
                 className="about__stack"
               >
@@ -66,7 +66,7 @@ function About() {
                 style={{
                   textDecoration: "line-through",
                   fontStyle: "italic",
-                  color: "#b0b0b0"
+                  color: "#b0b0b0",
                 }}
               >
                 KawalCorona merupakan penyedia API gratis dari Indonesia yang
